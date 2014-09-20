@@ -1,0 +1,41 @@
+<h1>Listing creators</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fname</th>
+      <th>Lname</th>
+      <th>Addr1</th>
+      <th>Addr2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Resume</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @creators.each do |creator| %>
+      <tr>
+        <td><%= creator.fname %></td>
+        <td><%= creator.lname %></td>
+        <td><%= creator.addr1 %></td>
+        <td><%= creator.addr2 %></td>
+        <td><%= creator.city %></td>
+        <td><%= creator.state %></td>
+        <td><%= creator.zip %></td>
+        <td><%= creator.resume %></td>
+        <td><%= link_to 'Show', creator %></td>
+        <td><%= link_to 'Edit', edit_creator_path(creator) %></td>
+        <td><%= link_to 'Destroy', creator, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Creator', new_creator_path %>

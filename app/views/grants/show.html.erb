@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @grant.name %>
+</p>
+
+<p>
+  <strong>Organization:</strong>
+  <%= @grant.organization %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @grant.email %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @grant.phone %>
+</p>
+
+<p>
+  <strong>Contact fname:</strong>
+  <%= @grant.contact_fname %>
+</p>
+
+<p>
+  <strong>Contact lname:</strong>
+  <%= @grant.contact_lname %>
+</p>
+
+<p>
+  <strong>Addr1:</strong>
+  <%= @grant.addr1 %>
+</p>
+
+<p>
+  <strong>Addr2:</strong>
+  <%= @grant.addr2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @grant.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @grant.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @grant.zip %>
+</p>
+
+<p>
+  <strong>Fund type:</strong>
+  <%= @grant.fund_type %>
+</p>
+
+<p>
+  <strong>App process:</strong>
+  <%= @grant.app_process %>
+</p>
+
+<p>
+  <strong>App deadline:</strong>
+  <%= @grant.app_deadline %>
+</p>
+
+<%= link_to 'Edit', edit_grant_path(@grant) %> |
+<%= link_to 'Back', grants_path %>

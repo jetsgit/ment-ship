@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @creator.fname %>
+</p>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @creator.lname %>
+</p>
+
+<p>
+  <strong>Addr1:</strong>
+  <%= @creator.addr1 %>
+</p>
+
+<p>
+  <strong>Addr2:</strong>
+  <%= @creator.addr2 %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @creator.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @creator.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @creator.zip %>
+</p>
+
+<p>
+  <strong>Resume:</strong>
+  <%= @creator.resume %>
+</p>
+
+<%= link_to 'Edit', edit_creator_path(@creator) %> |
+<%= link_to 'Back', creators_path %>

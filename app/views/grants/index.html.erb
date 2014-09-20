@@ -1,0 +1,53 @@
+<h1>Listing grants</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Organization</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Contact fname</th>
+      <th>Contact lname</th>
+      <th>Addr1</th>
+      <th>Addr2</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zip</th>
+      <th>Fund type</th>
+      <th>App process</th>
+      <th>App deadline</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @grants.each do |grant| %>
+      <tr>
+        <td><%= grant.name %></td>
+        <td><%= grant.organization %></td>
+        <td><%= grant.email %></td>
+        <td><%= grant.phone %></td>
+        <td><%= grant.contact_fname %></td>
+        <td><%= grant.contact_lname %></td>
+        <td><%= grant.addr1 %></td>
+        <td><%= grant.addr2 %></td>
+        <td><%= grant.city %></td>
+        <td><%= grant.state %></td>
+        <td><%= grant.zip %></td>
+        <td><%= grant.fund_type %></td>
+        <td><%= grant.app_process %></td>
+        <td><%= grant.app_deadline %></td>
+        <td><%= link_to 'Show', grant %></td>
+        <td><%= link_to 'Edit', edit_grant_path(grant) %></td>
+        <td><%= link_to 'Destroy', grant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Grant', new_grant_path %>
