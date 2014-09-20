@@ -4,5 +4,14 @@ A simple app to track grants, disbursements, and creators
 using has_many :through relationships
 
 * Ruby 2.1.0
-
+* Grant table identifies organization, contact info, fund type,
+  application process, and application table. It has_many 
+  Disbursements, and has_many Creators :through Disbursement
+* Creator table has name/location info, has_many Disbursements,
+  has_many Grants :through Disbursement, has_many Resumes, and
+  has_many proposals. 
+* Resume table has a title, content, and revision.
+* Proposal has a title and summary.
+* The join table Disbursements tracks amount, obligations, award
+  start date, and award end date.
 
