@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140920123056) do
+ActiveRecord::Schema.define(version: 20140920130805) do
 
   create_table "creators", force: true do |t|
     t.string   "fname"
@@ -21,7 +21,6 @@ ActiveRecord::Schema.define(version: 20140920123056) do
     t.string   "city"
     t.string   "state"
     t.string   "zip"
-    t.string   "resume"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
